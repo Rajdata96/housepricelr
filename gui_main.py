@@ -54,7 +54,7 @@ def set_mainbg_hack_url():
      )
 
 # Function to load the model using pickle from GitHub
-def load_model(url=r'https://raw.githubusercontent.com/Rajdata96/housepricelr/main/lrprice.pkl'):
+def load_model(url=r'https://raw.githubusercontent.com/Rajdata96/housepricelr/main/rfpricefinal.pkl'):
 
     response = requests.get(url)
     if response.status_code == 200:
