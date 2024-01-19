@@ -65,14 +65,14 @@ def load_model(url=r'https://raw.githubusercontent.com/Rajdata96/housepricelr/ma
         return None
     
 # Function to load the model using pickle
-def load_model1(filename="lrprice.pkl"):
+def load_model1(filename="rfpricefinal.pkl"):
     # current_directory = os.path.dirname(__file__)
     # filename = os.path.join(current_directory, filename)
 
-    filename = 'https://raw.githubusercontent.com/Rajdata96/housepricelr/main/lrprice.pkl'
+    filename = 'https://raw.githubusercontent.com/Rajdata96/housepricelr/main/rfpricefinal.pkl'
     
     #'C:/Users/Mahendran/Desktop/sw/gui_ml/lrprice.pkl'
-    # filename = 'https://github.com/ai-splash/corona_india_data/blob/master/lrprice.pkl'
+    # filename = 'https://github.com/ai-splash/corona_india_data/blob/master/rfpricefinal.pkl'
     with open(filename, "rb") as file:
         model = pickle.load(file)
     return model
